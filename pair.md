@@ -41,7 +41,7 @@ c = conn.cursor()
 
 today = '2014-08-14'
 
-timestamp = datetime.strptime(today, '%Y-%M-%d').strftime("%s")
+timestamp = datetime.strptime(today, '%Y-%M-%d').strftime("%Y%M%d")
 
 c.execute(
     '''CREATE TABLE logins_7d_%s AS
