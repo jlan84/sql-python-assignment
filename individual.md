@@ -4,7 +4,7 @@ We're working with the same data as we did in the morning.
 
 ## Write a SQL pipeline
 
-There's a lot of calculations that are regularly needed. One thing that we can do is build a table that consolodates all the needed information into one table. We're going to build a pipeline that creates a table that's a snapshot of the system on that given day. In the real world, these tables would be ever changing as users register and do actions on the site. It's useful to have a snapshot of the system taken on every day.
+There's a lot of calculations that are regularly needed. One thing that we can do is build a table that consolidates all the needed information into one table. We're going to build a pipeline that creates a table that's a snapshot of the system on that given day. In the real world, these tables would be ever changing as users register and do actions on the site. It's useful to have a snapshot of the system taken on every day.
 
 The snapshot will be a table with these columns:
 
