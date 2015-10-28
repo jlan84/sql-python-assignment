@@ -1,6 +1,6 @@
 ## Classes and Inheritance
 
-We'd like to create a class stucture for points in the cartesian plane (x, y points).
+We'd like to create a class structure for points in the cartesian plane (x, y points).
 
 Here's how we should be able to use it:
 
