@@ -30,7 +30,7 @@ python create_users_table.py
 
 Here's an example of a very simple pipeline which creates a table of the number of logins for each user in the past 7 days.
 
-We hardcode in today as `2014-08-14` since that's the last day of the data.
+We hardcode in today as `2014-08-14` since that's the last day of the data, and pass in the timestamp as part of a dictionary in the second argument of `c.execute` to protect against SQL injection. 
 
 ```python
 import psycopg2
@@ -44,11 +44,11 @@ today = '2014-08-14'
 timestamp = datetime.strptime(today, '%Y-%m-%d').strftime("%Y%m%d")
 
 c.execute(
-    '''CREATE TABLE logins_7d_%s AS
+    '''CREATE TABLE logins_7d_%(timestamp)s AS
     SELECT userid, COUNT(*) AS cnt
     FROM logins
     WHERE logins.tmstmp > timestamp '2014-08-14' - interval '7 days'
-    GROUP BY userid;''' % timestamp
+    GROUP BY userid;''', {'timestamp': int(timestamp)}
 )
 
 conn.commit()
