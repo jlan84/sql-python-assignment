@@ -1,7 +1,7 @@
 import psycopg2
 from datetime import datetime
 
-conn = psycopg2.connect(dbname='socialmedia', user='brent', host='/tmp')
+conn = psycopg2.connect(dbname='socialmedia', user='postgres', host='/tmp')
 c = conn.cursor()
 
 timestamp = datetime.today().strftime("%s")
