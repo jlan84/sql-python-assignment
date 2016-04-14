@@ -1,6 +1,6 @@
 # SQL Pipelines
 
-We're working with the same data as the [SQL pair exercise](https://github.com/zipfian/sql/blob/master/pair.md).
+We're working this morning with the same data as the [SQL pair exercise](https://github.com/zipfian/sql/blob/master/pair.md).
 
 ## Write a SQL pipeline
 
