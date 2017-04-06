@@ -30,7 +30,7 @@ python create_users_table.py
 
 Here's an example of a very simple pipeline which creates a table of the number of logins for each user in the past 7 days.
 
-We hardcode in today as `2014-08-14` since that's the last day of the data, and pass in the timestamp as part of a dictionary in the second argument of `c.execute` to protect against SQL injection. 
+We hardcode in today as `2014-08-14` since that's the last day of the data, and pass in the timestamp as part of a dictionary in the second argument of `c.execute` to protect against SQL injection.
 
 ```python
 import psycopg2
@@ -41,6 +41,8 @@ c = conn.cursor()
 
 today = '2014-08-14'
 
+# This is not strictly necessary but demonstrates how you can convert a date
+# to another format
 ts = datetime.strptime(today, '%Y-%m-%d').strftime("%Y%m%d")
 
 c.execute(
@@ -60,8 +62,8 @@ conn.close()
 Here are some steps to get you started:
 
 1. Create a pipeline like the example above that has the userid, registration date and the last login date.
-2. Now try adding an additional column. 
-	*HINT* Use temporary tables ( we can create temporary tables a few different ways, 2 are shown below)
+2. Now try adding an additional column.
+	*HINT* Use temporary tables (we can create temporary tables a few different ways, 2 are shown below)
 
 	```sql
 	SELECT userid, tmstmp as reg_date
