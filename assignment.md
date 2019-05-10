@@ -1,6 +1,6 @@
 # SQL Pipelines
 
-We're working this morning with the same data as the [SQL pair exercise](https://github.com/zipfian/sql/blob/master/pair.md).
+Some of the data we'll be using in this assignement was contained in the <a href="https://github.com/GalvanizeDataScience/sql">SQL sprint</a>.
 
 ## Write a SQL pipeline
 
