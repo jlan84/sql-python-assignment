@@ -1,6 +1,8 @@
 import psycopg2
 from datetime import datetime
 
+#  If using docker change host to 'localhost' and password to the password 
+# set in the 'docker run' command
 conn = psycopg2.connect(dbname='socialmedia', user='postgres', host='/tmp')
 c = conn.cursor()
 
