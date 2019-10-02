@@ -1,6 +1,6 @@
 # SQL Pipelines
 
-Some of the data we'll be using in this assignement was contained in the <a href="https://github.com/GalvanizeDataScience/sql">SQL sprint</a>.
+The data for this assignment is contained in the <a href="./data/socialmedia.sql">socialmedia.sql</a> dump in the data directory. You can ingest the data into PostgreSQL following the procedures outlined in the <a href="https://github.com/GalvanizeDataScience/sql">SQL sprint</a>.
 
 ## Write a SQL pipeline
 
