@@ -1,6 +1,6 @@
 # SQL Pipelines
 
-The data for this assignment is contained in the <a href="./data/socialmedia.sql">socialmedia.sql</a> dump in the data directory. You can ingest the data into PostgreSQL following the procedures outlined in the <a href="./load_social_media.md">Load Social Media</a>.
+The data for this assignment is contained in the <a href="./data/socialmedia.sql">socialmedia.sql</a> dump in the data directory. You can ingest the data into PostgreSQL following the procedures outlined in the [docker postgres guide](https://github.com/GalvanizeDataScience/docker/blob/master/guides/docker_postgres.md).
 
 ## Write a SQL pipeline
 
@@ -36,7 +36,7 @@ We hardcode in today as `2014-08-14` since that's the last day of the data, and 
 import psycopg2
 from datetime import datetime
 
-conn = psycopg2.connect(dbname='socialmedia', user='postgres', host='/tmp')
+conn = psycopg2.connect(dbname='socialmedia', user='postgres', host='localhost')
 c = conn.cursor()
 
 today = '2014-08-14'
