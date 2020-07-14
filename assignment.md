@@ -1,7 +1,7 @@
 # SQL Pipelines from python
 
 ## Introduction
-The data for this assignment is contained in the <a href="./data/socialmedia.sql">socialmedia.sql</a> dump in the data directory. You can ingest the data into PostgreSQL following the procedures outlined in the [docker postgres guide](https://github.com/GalvanizeDataScience/docker/blob/master/guides/docker_postgres.md).
+The data for this assignment is contained in the <a href="./data/socialmedia.sql">socialmedia.sql</a> dump in the data directory. You can ingest the data into PostgreSQL following the procedures outlined in the [docker postgres guide](https://github.com/GalvanizeDataScience/docker/blob/master/reference/docker_postgres.md).
 
 There's a lot of calculations that are regularly needed. One thing that we can do is build a table that consolidates all the needed information into one table. We're going to build a pipeline that creates a table that's a snapshot of the system on that given day. In the real world, these tables would be ever changing as users register and do actions on the site. It's useful to have a snapshot of the system taken on every day.
 
