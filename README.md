@@ -5,4 +5,10 @@ read data from SQL systems directly into Python is an increadibly useful skill. 
 writing piplines that will populate SQL databases means manually data entry is a thing of the past.
 Combining these two pieces of technology is a very common task of working data scientists.
 
+Below is the link to the assigment.
+
 * [Assignment](assignment.md)
+
+Below is the link to the `explanation`. In the assignment, there are some design choices, this `explanation` file explains how the decision choices are made.
+
+* [Explanation](explanation.md)

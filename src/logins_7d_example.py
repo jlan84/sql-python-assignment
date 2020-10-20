@@ -5,7 +5,8 @@ from datetime import datetime
 # set in the 'docker run' command
 conn = psycopg2.connect(dbname='socialmedia',
                         user='postgres',
-                        host='localhost')
+                        host='localhost',
+                        password="password")
 c = conn.cursor()
 
 today = '2014-08-14'
